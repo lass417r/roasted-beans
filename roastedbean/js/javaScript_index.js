@@ -50,9 +50,10 @@ function visBeans() {
   beans.forEach((bean) => {
     if (filter == bean.land || filter == "alle") {
       let klon = temp.cloneNode(true).content;
-      klon.querySelector(".navn").textContent = bean.navn;
       klon.querySelector(".billede").src =
         "medium/produkt/" + bean.billede_id + png;
+
+      klon.querySelector(".navn").textContent = bean.navn;
       klon.querySelector(".smagsnoter").textContent = bean.smagsnoter;
       klon.querySelector(".land").textContent = bean.land;
       klon.querySelector(".pris").textContent = "Pris: " + bean.pris + " kr.-";

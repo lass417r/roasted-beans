@@ -6,7 +6,27 @@
 }
 
 body {
-  background-color: #f8f6f7;
+  background-color: #f1e6ec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: bebas-neue-semirounded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* color: #677c5b; */
+  color: #fff;
+}
+
+p {
+  font-family: bressay-display-devanagari, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* color: #25312a; */
+  color: #fff;
 }
 
 main {
@@ -60,13 +80,13 @@ img {
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 50%;
-  right: 50%;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   cursor: pointer;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 /* Links inside the dropdown */
@@ -96,11 +116,36 @@ img {
 }
 /* Dropdown MENU END */
 
+/* OVERLAY START */
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(103, 124, 91, 0.8);
+  padding: 5px;
+}
+
+.overlay button {
+  float: right;
+}
+
+.menu:hover .overlay {
+  opacity: 1;
+}
+
+/* OVERLAY END */
+
 footer {
-  text-align: center;
-  gap: 5rem;
+  display: flex;
   margin-top: 2rem;
   padding-bottom: 2rem;
+  gap: 5rem;
   background-color: #25312a;
 }
 
@@ -142,7 +187,7 @@ h1 {
 .splash {
   width: 100%;
   height: auto;
-  background-color: #f8f6f7;
+  background-color: #f1e6ec;
   display: flex;
   justify-content: space-around;
 }
@@ -155,23 +200,11 @@ h2 {
   background-color: rgb(179, 179, 179);
 }
 
-.menu:nth-child(odd) {
-  background-color: rgb(255, 255, 255);
-}
-
-.menu:nth-child(even) {
-  background-color: rgb(237, 237, 237);
-}
-
 .menu {
+  position: relative;
   transition: 250ms ease-in;
   padding: 1rem;
-  outline: 0.125rem solid rgb(118, 118, 118);
   cursor: pointer;
-}
-
-.menu:hover {
-  outline-offset: 0.125rem;
 }
 
 article .klik_info {
@@ -191,7 +224,7 @@ article .klik_info {
 }
 
 #popup article {
-  background-color: white;
+  background-color: rgba(103, 124, 91, 0.95);
   display: grid;
   place-items: center;
 }
@@ -219,7 +252,8 @@ article .klik_info {
   }
 
   footer {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 2rem;
   }
 }

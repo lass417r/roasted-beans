@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/pmo3lig.css" />
     <link rel="stylesheet" href="css/style_main.css" />
     <link
       rel="icon"
@@ -35,16 +36,37 @@
       <section></section>
     </main>
     <footer>
-      <p>Lavet af gruppe 10</p>
+      <div id="footer_1">
+        <h3>Vigtig info</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          doloribus soluta, iste, nihil qui illo eos nisi voluptates iusto
+          laborum accusamus optio dicta inventore veritatis provident vero
+          debitis consectetur porro quod neque impedit repellendus magni.
+        </p>
+      </div>
+      <div id="footer_2">
+        <h2>
+          ROASTED <br />
+          BEAN
+        </h2>
+      </div>
+      <div id="footer_3">
+        <h3>Tilmed dig vores nyhedsbrev</h3>
+        <p>Lavet af gruppe 10</p>
+      </div>
     </footer>
     <template>
       <article class="menu">
-        <h3 class="navn"></h3>
         <img src="" alt="" class="billede" />
-        <h4 class="smagsnoter"></h4>
-        <p class="land"></p>
-        <p class="pris"></p>
-        <p class="klik_info">Klik for mere info</p>
+        <div class="overlay">
+          <h3 class="navn"></h3>
+          <h4 class="smagsnoter"></h4>
+          <p class="land"></p>
+          <p class="pris"></p>
+          <button>KØB</button>
+          <button class="klik_info">SE MERE</button>
+        </div>
       </article>
     </template>
     <section id="popup">
@@ -60,6 +82,5 @@
       </article>
     </section>
     <script src="js/javaScript_index.js"></script>
-    <script></script>
   </body>
 </html>
