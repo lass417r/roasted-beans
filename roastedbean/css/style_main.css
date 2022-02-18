@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #f8f6f7;
 }
 
 main {
@@ -38,46 +38,64 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/* Menu start */
-
-header #menu {
-  margin: 0rem 1rem 1rem 1rem;
-  overflow-x: auto;
-  flex-direction: column;
+/* Dropdown MENU START */
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
 }
 
-header {
-  display: contents;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-#menuknap {
-  font-size: 3rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: end;
-  margin: 3rem;
-}
-
-.hidden {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  cursor: pointer;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
+/* Links inside the dropdown */
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-/* Menu end */
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* Dropdown MENU END */
 
 footer {
   text-align: center;
   gap: 5rem;
   margin-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 0.125rem solid #000;
-  background-color: rgb(50, 79, 52);
+  background-color: #25312a;
 }
 
 footer p {
@@ -100,9 +118,8 @@ button:hover {
 }
 
 h1 {
-  color: rgb(255, 0, 0);
+  color: #677c5b;
   text-align: center;
-  background-color: rgb(50, 79, 52);
   padding: 3rem;
   font-size: 2.3rem;
   border-bottom: 0.125rem solid #000;
@@ -111,23 +128,19 @@ h1 {
 }
 
 .logo {
-  float: left;
-  max-width: auto;
-  height: 10vw;
-  padding-left: 2vw;
-  padding-top: 2vw;
+  height: 12em;
+  width: auto;
+  margin: 2em;
 }
 
 .spash {
   width: 100%;
   height: auto;
-  background-color: darkgreen;
+  background-color: #f8f6f7;
 }
 
 h2 {
   text-align: center;
-  margin-top: 0.8rem;
-  margin-bottom: 0.5rem;
 }
 
 .valgt {
@@ -193,26 +206,6 @@ article .klik_info {
 }
 
 @media (min-width: 600px) {
-  #menuknap {
-    display: none;
-  }
-
-  .hidden {
-    display: flex;
-  }
-
-  header #menu {
-    display: flex;
-    margin: 0rem 5rem 1rem 5rem;
-    overflow-x: unset;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  ul {
-    flex-direction: row;
-  }
-
   h1 {
     font-size: 4.5rem;
   }

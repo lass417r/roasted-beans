@@ -15,7 +15,7 @@ let filter = "alle";
 const jpg = ".jpg";
 
 function start() {
-  const filterKnapper = document.querySelectorAll("nav button");
+  const filterKnapper = document.querySelectorAll(".dropdown-content button");
   filterKnapper.forEach((knap) =>
     knap.addEventListener("click", filtrerKategori)
   );
