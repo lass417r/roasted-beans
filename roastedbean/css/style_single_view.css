@@ -65,7 +65,7 @@ h2 {
 
 .menu {
   display: grid;
-  outline: 0.125rem solid rgb(118, 118, 118);
+  /* outline: 0.125rem solid rgb(118, 118, 118); */
   padding: 10px;
   border-radius: 5px;
   transition: 250ms ease-in;
@@ -85,7 +85,7 @@ h2 {
 
 .menu p {
   margin-bottom: 0.2rem;
-  text-align: center;
+  text-align: start;
 }
 
 #back_knap {
@@ -101,4 +101,36 @@ h2 {
     display: flex;
     justify-content: center;
   }
+}
+
+body {
+  background-color: #f1e6ec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: bebas-neue-semirounded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #677c5b;
+}
+
+p {
+  font-family: bressay-display-devanagari, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #25312a;
+  padding-top: 1.5%;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kollonne {
+  text-align: start;
 }

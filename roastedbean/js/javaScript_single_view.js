@@ -33,7 +33,7 @@ function visBeans(bean) {
   document.querySelector(".land").textContent = bean.land;
   document.querySelector(".proccess").textContent = bean.proccess;
   document.querySelector(".velegnet").textContent = bean.velegnet_til;
-  document.querySelector(".pris").textContent = bean.pris + " kr.-";
+  document.querySelector(".pris").textContent = bean.pris + " kr";
   document.querySelector("button").addEventListener("click", () => {
     window.history.back();
   });
