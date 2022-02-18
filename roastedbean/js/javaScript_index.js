@@ -51,7 +51,8 @@ function visBeans() {
     if (filter == bean.land || filter == "alle") {
       let klon = temp.cloneNode(true).content;
       klon.querySelector(".navn").textContent = bean.navn;
-      klon.querySelector(".billede").src = "medium/" + bean.billed_id + jpg;
+      klon.querySelector(".billede").src =
+        "medium/" + "produkt/" + bean.billed_id + png;
       klon.querySelector(".smagsnoter").textContent = bean.smagsnoter;
       klon.querySelector(".land").textContent = bean.land;
       klon.querySelector(".pris").textContent = "Pris: " + bean.pris + " kr.-";
@@ -74,7 +75,8 @@ function visDetaljer(bean) {
   const popup = document.querySelector("#popup");
   popup.style.display = "block";
   popup.querySelector(".navn").textContent = bean.navn;
-  popup.querySelector(".billede").src = "medium/" + bean.billed_id + jpg;
+  popup.querySelector(".billede").src =
+    "medium/" + "produkt/" + bean.billed_id + png;
   popup.querySelector(".kortbeskrivelse").textContent = bean.beskrivelse_kort;
   popup.querySelector(".smagsnoter").textContent = bean.smagsnoter;
   popup.querySelector(".land").textContent = bean.land;
