@@ -12,7 +12,7 @@ const options = {
 
 let beans;
 let filter = "alle";
-const jpg = ".jpg";
+const png = ".png";
 
 function start() {
   const filterKnapper = document.querySelectorAll(".dropdown-content button");
@@ -52,7 +52,7 @@ function visBeans() {
       let klon = temp.cloneNode(true).content;
       klon.querySelector(".navn").textContent = bean.navn;
       klon.querySelector(".billede").src =
-        "medium/" + "produkt/" + bean.billed_id + png;
+        "medium/produkt/" + bean.billede_id + png;
       klon.querySelector(".smagsnoter").textContent = bean.smagsnoter;
       klon.querySelector(".land").textContent = bean.land;
       klon.querySelector(".pris").textContent = "Pris: " + bean.pris + " kr.-";
@@ -76,7 +76,7 @@ function visDetaljer(bean) {
   popup.style.display = "block";
   popup.querySelector(".navn").textContent = bean.navn;
   popup.querySelector(".billede").src =
-    "medium/" + "produkt/" + bean.billed_id + png;
+    "medium/produkt/" + bean.billede_id + png;
   popup.querySelector(".kortbeskrivelse").textContent = bean.beskrivelse_kort;
   popup.querySelector(".smagsnoter").textContent = bean.smagsnoter;
   popup.querySelector(".land").textContent = bean.land;

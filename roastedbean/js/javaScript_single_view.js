@@ -23,9 +23,10 @@ async function loadJSON() {
 }
 
 function visBeans(bean) {
-  const jpg = ".jpg";
+  const png = ".png";
   document.querySelector(".navn").textContent = bean.navn;
-  document.querySelector(".billede").src = "medium/" + bean.billed_id + jpg;
+  document.querySelector(".billede").src =
+    "medium/produkt/" + bean.billede_id + png;
   document.querySelector(".langbeskrivelse").textContent =
     bean.beskrivelse_lang;
   document.querySelector(".smagsnoter").textContent = bean.smagsnoter;
