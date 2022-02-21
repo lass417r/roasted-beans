@@ -63,6 +63,9 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
 /* Dropdown MENU START */
 /* Dropdown Button */
 .dropbtn {
@@ -143,6 +146,16 @@ img {
 
 .overlay button {
   float: right;
+}
+
+.klik_info {
+  background-color: #25312a;
+  color: #fff;
+}
+
+.koeb_knap {
+  background-color: #5db983;
+  color: #fff;
 }
 
 .menu:hover .overlay {
