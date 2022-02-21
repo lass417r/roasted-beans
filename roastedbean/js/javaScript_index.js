@@ -12,13 +12,19 @@ const options = {
 
 let beans;
 let filterLand = "alle";
-let filterSmag = "Traditionel";
+let filterSmag = "alle";
 const png = ".png";
 
 //Start function loades når indholdet i DOM'en er loadet.
 function start() {
-  const filterKnapper = document.querySelectorAll(".dropdown-content button");
-  filterKnapper.forEach((knap) => knap.addEventListener("click", filtrerLand));
+  const filterKnapperLand = document.querySelectorAll("#filter1 button");
+  filterKnapperLand.forEach((knap) =>
+    knap.addEventListener("click", filtrerLand)
+  );
+  const filterKnapperSmag = document.querySelectorAll("#filter2 button");
+  filterKnapperSmag.forEach((knap) =>
+    knap.addEventListener("click", filtrerSmag)
+  );
   loadJSON();
 }
 
@@ -31,7 +37,19 @@ function filtrerLand() {
 
   const txtKategori = document.querySelector("header .txt_kategori");
   console.log(this);
-  txtKategori.textContent = "Filter: " + this.textContent;
+  txtKategori.textContent = this.textContent;
+}
+
+function filtrerSmag() {
+  filterSmag = this.dataset.smagsnoter;
+  document.querySelector(".valgt").classList.remove("valgt");
+  this.classList.add("valgt");
+
+  visBeans();
+
+  const txtKategori = document.querySelector("header .txt_kategori2");
+  console.log(this);
+  txtKategori.textContent = this.textContent;
 }
 
 async function loadJSON() {
