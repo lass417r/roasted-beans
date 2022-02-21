@@ -8,13 +8,17 @@ const options = {
   },
 };
 
+// Her hiver den fat i det specifike ID, for det array objekt
+// der er trykket på, på index.html
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 let bean;
 
+//json begynder først at loade når indholdet i DOM'en er loadet.
 document.addEventListener("DOMContentLoaded", loadJSON);
 
+// Loader vores aray på siden med ID og starter functionen visBeans()
 async function loadJSON() {
   const JSONData = await fetch(url + id, options);
   bean = await JSONData.json();
@@ -22,6 +26,7 @@ async function loadJSON() {
   visBeans(bean);
 }
 
+// Her bliver de information specifikt til ID'et loadet på siden.
 function visBeans(bean) {
   const png = ".png";
   document.querySelector(".navn").textContent = bean.navn;
@@ -34,6 +39,7 @@ function visBeans(bean) {
   document.querySelector(".proccess").textContent = bean.proccess;
   document.querySelector(".velegnet").textContent = bean.velegnet_til;
   document.querySelector(".pris").textContent = bean.pris + " dkk";
+  // Her går den tilbage til siden brugeren var på forinden = Index.html
   document.querySelector("button").addEventListener("click", () => {
     window.history.back();
   });
