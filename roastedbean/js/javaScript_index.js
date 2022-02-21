@@ -56,7 +56,7 @@ function visBeans() {
       klon.querySelector(".navn").textContent = bean.navn;
       klon.querySelector(".smagsnoter").textContent = bean.smagsnoter;
       klon.querySelector(".land").textContent = bean.land;
-      klon.querySelector(".pris").textContent = "Pris: " + bean.pris + " kr.-";
+      klon.querySelector(".pris").textContent = "Pris: " + bean.pris + " kr";
       klon
         .querySelector("article")
         .addEventListener("click", () => visDetaljer(bean));
