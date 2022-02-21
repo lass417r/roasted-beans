@@ -10,7 +10,7 @@ img {
 }
 
 body {
-  background-color: #f1e6ec;
+  background-color: rgb(241, 230, 236);
 }
 
 h1,
@@ -21,16 +21,15 @@ h5 {
   font-family: bebas-neue-semirounded, sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* color: #677c5b; */
-  color: #fff;
+  color: #677c5b;
 }
 
 p {
   font-family: bressay-display-devanagari, sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* color: #25312a; */
-  color: #fff;
+  color: #25312a;
+  padding-top: 1.5%;
 }
 
 main {
@@ -151,11 +150,21 @@ img {
 }
 
 .info_section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   justify-content: center;
   margin: 10%;
-  gap: 5%;
+}
+
+.info_section h3 {
+  padding-top: 5%;
+}
+@media (min-width: 800px) {
+  .info_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 10%;
+    gap: 5%;
+  }
 }
 
 footer {

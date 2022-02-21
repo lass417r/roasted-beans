@@ -11,20 +11,19 @@ const options = {
 };
 
 let beans;
-let filter = "alle";
+let filterLand = "alle";
+let filterSmag = "Traditionel";
 const png = ".png";
 
 //Start function loades når indholdet i DOM'en er loadet.
 function start() {
   const filterKnapper = document.querySelectorAll(".dropdown-content button");
-  filterKnapper.forEach((knap) =>
-    knap.addEventListener("click", filtrerKategori)
-  );
+  filterKnapper.forEach((knap) => knap.addEventListener("click", filtrerLand));
   loadJSON();
 }
 
-function filtrerKategori() {
-  filter = this.dataset.land;
+function filtrerLand() {
+  filterLand = this.dataset.land;
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
@@ -49,7 +48,12 @@ function visBeans() {
   container.textContent = "";
 
   beans.forEach((bean) => {
-    if (filter == bean.land || filter == "alle") {
+    if (
+      (filterLand == bean.land && filterSmag == bean.smagsnoter) ||
+      (filterLand == bean.land && filterSmag == "alle") ||
+      (filterLand == "alle" && filterSmag == bean.smagsnoter) ||
+      (filterLand == "alle" && filterSmag == "alle")
+    ) {
       let klon = temp.cloneNode(true).content;
       klon.querySelector(".billede").src =
         "medium/produkt/" + bean.billede_id + png;
