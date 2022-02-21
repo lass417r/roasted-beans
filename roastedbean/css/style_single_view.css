@@ -54,7 +54,8 @@ h1:hover {
 }
 
 h2 {
-  text-align: center;
+  padding-top: 15%;
+  /* text-align: center; */
   margin-top: 0.8rem;
   margin-bottom: 0.5rem;
 }
@@ -134,5 +135,14 @@ p {
     text-align: start;
     padding-top: 11%;
     max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    /* padding-top: 15%; */
+    text-align: center;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
   }
 }
