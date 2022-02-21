@@ -14,6 +14,7 @@ let beans;
 let filter = "alle";
 const png = ".png";
 
+//Start function loades når indholdet i DOM'en er loadet.
 function start() {
   const filterKnapper = document.querySelectorAll(".dropdown-content button");
   filterKnapper.forEach((knap) =>
