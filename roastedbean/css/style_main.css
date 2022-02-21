@@ -217,6 +217,7 @@ h1 {
   height: auto;
   position: relative;
   z-index: 0;
+  opacity: 20%;
 }
 
 .splash {
