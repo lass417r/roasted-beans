@@ -17,10 +17,12 @@ const png = ".png";
 
 //Start function loades når indholdet i DOM'en er loadet.
 function start() {
+  // Gør Land filter dropdown clickbar og henviser til filtrerLand
   const filterKnapperLand = document.querySelectorAll("#filter1 button");
   filterKnapperLand.forEach((knap) =>
     knap.addEventListener("click", filtrerLand)
   );
+  // Gør smagsnoter filter dropdown clickbar og henviser til filtrerSmag
   const filterKnapperSmag = document.querySelectorAll("#filter2 button");
   filterKnapperSmag.forEach((knap) =>
     knap.addEventListener("click", filtrerSmag)
@@ -79,7 +81,7 @@ function visBeans() {
       klon.querySelector(".navn").textContent = bean.navn;
       klon.querySelector(".smagsnoter").textContent = bean.smagsnoter;
       klon.querySelector(".land").textContent = bean.land;
-      klon.querySelector(".pris").textContent = "Pris: " + bean.pris + " kr";
+      klon.querySelector(".pris").textContent = "Price: " + bean.pris + " kr";
       klon
         .querySelector("article")
         .addEventListener("click", () => visDetaljer(bean));
@@ -104,7 +106,7 @@ function visDetaljer(bean) {
   popup.querySelector(".kortbeskrivelse").textContent = bean.beskrivelse_kort;
   popup.querySelector(".smagsnoter").textContent = bean.smagsnoter;
   popup.querySelector(".land").textContent = bean.land;
-  popup.querySelector(".pris").textContent = bean.pris + " kr.-";
+  popup.querySelector(".pris").textContent = bean.pris + " kr";
   popup.querySelector(".videre").addEventListener("click", () => {
     location.href = "single_view.html?id=" + bean._id;
   });
