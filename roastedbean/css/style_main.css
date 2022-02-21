@@ -192,7 +192,9 @@ h1 {
   padding: 3rem;
   font-size: 2.3rem;
   text-transform: uppercase;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: bebas-neue-semirounded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .logo {
