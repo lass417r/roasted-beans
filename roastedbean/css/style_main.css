@@ -47,7 +47,7 @@ article {
   padding: 10px;
   border-radius: 5px;
   border-radius: 0px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 article img {
@@ -162,6 +162,7 @@ button {
   transition: 250ms ease-in;
   border: none;
   border-radius: 0px;
+  cursor: pointer;
 }
 
 button:hover {

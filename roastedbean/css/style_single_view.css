@@ -86,6 +86,8 @@ h2 {
 
 #back_knap {
   place-self: start;
+  background-color: #25312a;
+  color: #e6f1e8;
 }
 
 @media (min-width: 542px) {
@@ -100,7 +102,7 @@ h2 {
 }
 
 body {
-  background-color: #f1e6ec;
+  background-color: #e6f1e8;
 }
 
 h1,
@@ -122,11 +124,15 @@ p {
   padding-top: 1.5%;
 }
 
-article {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+@media (min-width: 800px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.kollonne {
-  text-align: start;
+  .kollonne {
+    text-align: start;
+    padding-top: 11%;
+    max-width: 500px;
+  }
 }
