@@ -42,8 +42,8 @@ function filtrerLand() {
 
 function filtrerSmag() {
   filterSmag = this.dataset.smagsnoter;
-  document.querySelector(".valgt").classList.remove("valgt");
-  this.classList.add("valgt");
+  document.querySelector(".valgt2").classList.remove("valgt2");
+  this.classList.add("valgt2");
 
   visBeans();
 
