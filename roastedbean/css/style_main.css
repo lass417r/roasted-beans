@@ -410,6 +410,11 @@ article .klik_info {
   font-size: 3rem;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
 /* footer mobil */
 @media (max-width: 600px) {
   .logo {
