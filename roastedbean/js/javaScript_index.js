@@ -115,8 +115,8 @@ function visDetaljer(bean) {
   popup.querySelector(".billede").src =
     "medium/produkt/" + bean.billede_id + png;
   popup.querySelector(".kortbeskrivelse").textContent = bean.beskrivelse_kort;
-  popup.querySelector(".smagsnoter").textContent = bean.smagsnoter;
-  popup.querySelector(".land").textContent = bean.land;
+  // popup.querySelector(".smagsnoter").textContent = bean.smagsnoter;
+  // popup.querySelector(".land").textContent = bean.land;
   popup.querySelector(".pris").textContent = bean.pris + " kr";
   // Gør så at når man trykker mere info, sender den en til single
   // view siden med ID fra arrayet.

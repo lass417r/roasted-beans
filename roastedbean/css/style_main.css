@@ -320,10 +320,12 @@ article .klik_info {
 #popup p {
   margin-bottom: 0.2rem;
   color: #fff;
+  text-align: center;
 }
 
 #popup h2 {
   color: #fff;
+  font-size: 3rem;
 }
 
 #popup button:first-child {
@@ -341,7 +343,7 @@ article .klik_info {
 }
 
 .videre {
-  background-color: #2e4b3a;
+  background-color: #3e8e41;
   color: white;
   padding: 8px;
   border: none;
