@@ -269,6 +269,11 @@ h2 {
   margin-right: 5%;
 }
 
+#h1_forside {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .valgt {
   background-color: rgb(179, 179, 179);
 }
