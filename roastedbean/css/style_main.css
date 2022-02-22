@@ -403,4 +403,12 @@ article .klik_info {
     padding-left: 2.5%;
     padding-right: 2.5%;
   }
+
+  #h1_forside {
+    padding: 0%;
+  }
+
+  #h4_forside {
+    padding: 0%;
+  }
 }
