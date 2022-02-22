@@ -123,6 +123,11 @@ h5 {
   color: #677c5b;
 }
 
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
 p {
   font-family: bressay-display-devanagari, sans-serif;
   font-weight: 400;
@@ -149,6 +154,8 @@ p {
     /* padding-top: 15%; */
     margin-top: 0.8rem;
     margin-bottom: 0.5rem;
+    font-size: 4rem;
+    text-align: start;
   }
 
   footer {
