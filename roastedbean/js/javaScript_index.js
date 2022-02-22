@@ -102,6 +102,7 @@ document.querySelector("#popup button").addEventListener("click", lukPopup);
 // Fjerner popup vinduet
 function lukPopup() {
   document.querySelector("#popup").style.display = "none";
+  document.querySelector("body").classList.remove("hidden");
 }
 
 //popup view
@@ -110,6 +111,7 @@ function visDetaljer(bean) {
   const popup = document.querySelector("#popup");
   // Gør det muligt at se popup
   popup.style.display = "block";
+  document.querySelector("body").classList.add("hidden");
   // Information til popupvinduet
   popup.querySelector(".navn").textContent = bean.navn;
   popup.querySelector(".billede").src =
