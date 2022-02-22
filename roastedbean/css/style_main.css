@@ -227,6 +227,12 @@ h1 {
   color: ivory;
 }
 
+#h4_forside {
+  display: flex;
+  justify-content: center;
+  color: ivory;
+}
+
 .splash_video {
   width: 100%;
   height: auto;
