@@ -357,7 +357,6 @@ article .klik_info {
   }
   .logo {
     height: 180px;
-    /* width: auto; */
     margin-left: 4em;
     margin-top: 2em;
   }
@@ -367,7 +366,7 @@ article .klik_info {
     justify-content: center;
     gap: 5%;
   }
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr); */
+
   footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
