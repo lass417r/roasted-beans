@@ -66,6 +66,7 @@ img {
 button {
   cursor: pointer;
 }
+
 /* Dropdown MENU START */
 /* Dropdown Button */
 .dropbtn {
@@ -384,6 +385,11 @@ article .klik_info {
 }
 /* footer mobil */
 @media (max-width: 600px) {
+  .logo {
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
   footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
