@@ -388,6 +388,27 @@ article .klik_info {
     grid-column: 3/4;
   }
 }
+
+@media (min-width: 900px) {
+  /* // pil på index siden */
+  #arrow_index {
+    aspect-ratio: 137/49;
+    background-image: url(/roastedbean/medium/arrowindex.svg);
+    background-size: cover;
+    width: 15%;
+    height: 15%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+  }
+}
+
+#h2_catchphrase {
+  padding-bottom: 5%;
+  font-size: 3rem;
+}
+
 /* footer mobil */
 @media (max-width: 600px) {
   .logo {
