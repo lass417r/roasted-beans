@@ -257,6 +257,11 @@ h2 {
   text-align: start;
 }
 
+.info_tekst_index {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .valgt {
   background-color: rgb(179, 179, 179);
 }
