@@ -341,7 +341,7 @@ article .klik_info {
 
 @media (min-width: 600px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
   .logo {
     height: 180px;
@@ -376,7 +376,7 @@ article .klik_info {
     grid-column: 3/4;
   }
 }
-/* footer mobil  */
+/* footer mobil */
 @media (max-width: 600px) {
   footer {
     display: grid;
