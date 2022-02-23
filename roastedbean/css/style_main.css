@@ -359,8 +359,8 @@ article .klik_info {
   }
   .logo {
     height: 180px;
-    margin-left: 4em;
-    margin-top: 2em;
+    margin-left: 1em;
+    margin-top: -1em;
   }
   .info_section {
     display: grid;
@@ -401,7 +401,7 @@ article .klik_info {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 13%;
+    margin-top: 21%;
   }
 }
 
