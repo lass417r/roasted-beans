@@ -358,7 +358,6 @@ vores filter dropdowns der er aktiv */
 .hidden {
   overflow: hidden;
 }
-
 /* POPUP SLUT */
 
 /* Media quary til desktop */
@@ -458,10 +457,6 @@ html {
   #h4_forside {
     padding: 0%;
   }
-}
-
-.hidden {
-  overflow: hidden;
 }
 
 /* pulse animation på forside */
