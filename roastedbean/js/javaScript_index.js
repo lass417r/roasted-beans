@@ -112,14 +112,13 @@ function visDetaljer(bean) {
   const popup = document.querySelector("#popup");
   // Gør det muligt at se popup
   popup.style.display = "block";
+  // Gør det umuligt at scrolle når popup er åbent
   document.querySelector("body").classList.add("hidden");
   // Information til popupvinduet
   popup.querySelector(".navn").textContent = bean.navn;
   popup.querySelector(".billede").src =
     "medium/produkt/" + bean.billede_id + png;
   popup.querySelector(".kortbeskrivelse").textContent = bean.beskrivelse_kort;
-  // popup.querySelector(".smagsnoter").textContent = bean.smagsnoter;
-  // popup.querySelector(".land").textContent = bean.land;
   popup.querySelector(".pris").textContent = bean.pris + " kr";
   // Gør så at når man trykker mere info, sender den en til single
   // view siden med ID fra arrayet.
