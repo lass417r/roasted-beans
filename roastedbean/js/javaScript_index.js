@@ -98,6 +98,7 @@ function visBeans() {
 }
 // Lytter efter click på popup knappen, for at lukke den igen.
 document.querySelector("#popup button").addEventListener("click", lukPopup);
+document.querySelector("#popup").addEventListener("click", lukPopup);
 
 // Fjerner popup vinduet
 function lukPopup() {
